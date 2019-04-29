@@ -2,8 +2,8 @@
   "name": "react-responsive-music-player",
   "version": "0.4.3",
   "description": "A responsive music player built with React",
-  "main": "dist/MusicPlayer.js",
-  "module": "dist/MusicPlayer.js",
+  "main": "src/MusicPlayer.js",
+  "module": "src/MusicPlayer.js",
   "babel": {
     "presets": [
       "@babel/preset-env",
