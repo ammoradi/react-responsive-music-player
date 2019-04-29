@@ -52,7 +52,7 @@ export default class MusicPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMusicIndex: 0,
+      activeMusicIndex: props.activeMusicIndex || 0,
       leftTime: 0,
       play: props.autoplay || false,
       playMode: 'loop',
@@ -106,7 +106,7 @@ export default class MusicPlayer extends Component {
   };
 
   handlePrev = () => {
-    const { playlist } = this.props;
+    const { playlist, onPlayPrev } = this.props;
     const { playMode, activeMusicIndex } = this.state;
     if (playMode === 'repeat') {
       this.playMusic(activeMusicIndex);
@@ -123,10 +123,14 @@ export default class MusicPlayer extends Component {
     } else {
       this.setState({ play: false });
     }
+
+    if (onPlayPrev) {
+      onPlayPrev();
+    }
   };
 
   handleNext = () => {
-    const { playlist } = this.props;
+    const { playlist, onPlayNext } = this.props;
     const { playMode, activeMusicIndex } = this.state;
     if (playMode === 'repeat') {
       this.playMusic(activeMusicIndex);
@@ -142,6 +146,10 @@ export default class MusicPlayer extends Component {
       this.playMusic(randomIndex);
     } else {
       this.setState({ play: false });
+    }
+
+    if (onPlayNext) {
+      onPlayNext();
     }
   };
 
@@ -160,7 +168,7 @@ export default class MusicPlayer extends Component {
   };
 
   render() {
-    const { playlist, mode, width, progressColor, btnColor, style } = this.props;
+    const { playlist, mode, width, progressColor, btnColor, style, closeIcon } = this.props;
     const { play, progress, leftTime, volume, activeMusicIndex, playMode } = this.state;
     const activeMusic = playlist[activeMusicIndex];
     const playModeClass = getPlayModeClass(playMode);
@@ -174,6 +182,7 @@ export default class MusicPlayer extends Component {
         <audio autoPlay={play} preload="auto" ref={this.audioContainer} src={activeMusic.url}>
           <track kind="captions" />
         </audio>
+        { closeIcon && closeIcon }
         <div className="player-control">
           <div className="music-info">
             <h2 className="title">{activeMusic.title}</h2>
