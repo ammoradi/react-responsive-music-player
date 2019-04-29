@@ -1,16 +1,16 @@
 {
-  "main.css": "/react-responsive-music-player/static/css/main.b3ef0ae0.chunk.css",
-  "main.js": "/react-responsive-music-player/static/js/main.64bd5f4a.chunk.js",
-  "main.js.map": "/react-responsive-music-player/static/js/main.64bd5f4a.chunk.js.map",
+  "main.css": "/react-responsive-music-player/static/css/main.b7d3b79e.chunk.css",
+  "main.js": "/react-responsive-music-player/static/js/main.f5a83089.chunk.js",
+  "main.js.map": "/react-responsive-music-player/static/js/main.f5a83089.chunk.js.map",
   "runtime~main.js": "/react-responsive-music-player/static/js/runtime~main.0c4513b0.js",
   "runtime~main.js.map": "/react-responsive-music-player/static/js/runtime~main.0c4513b0.js.map",
-  "static/css/2.b84cc801.chunk.css": "/react-responsive-music-player/static/css/2.b84cc801.chunk.css",
+  "static/css/2.0a7b9adb.chunk.css": "/react-responsive-music-player/static/css/2.0a7b9adb.chunk.css",
   "static/js/2.d914bcee.chunk.js": "/react-responsive-music-player/static/js/2.d914bcee.chunk.js",
   "static/js/2.d914bcee.chunk.js.map": "/react-responsive-music-player/static/js/2.d914bcee.chunk.js.map",
   "index.html": "/react-responsive-music-player/index.html",
-  "precache-manifest.884a7e3cc2cdabcfe02170344349ed89.js": "/react-responsive-music-player/precache-manifest.884a7e3cc2cdabcfe02170344349ed89.js",
+  "precache-manifest.b5dcb40a98377b7c04faceaddd99e36e.js": "/react-responsive-music-player/precache-manifest.b5dcb40a98377b7c04faceaddd99e36e.js",
   "service-worker.js": "/react-responsive-music-player/service-worker.js",
-  "static/css/2.b84cc801.chunk.css.map": "/react-responsive-music-player/static/css/2.b84cc801.chunk.css.map",
-  "static/css/main.b3ef0ae0.chunk.css.map": "/react-responsive-music-player/static/css/main.b3ef0ae0.chunk.css.map",
+  "static/css/2.0a7b9adb.chunk.css.map": "/react-responsive-music-player/static/css/2.0a7b9adb.chunk.css.map",
+  "static/css/main.b7d3b79e.chunk.css.map": "/react-responsive-music-player/static/css/main.b7d3b79e.chunk.css.map",
   "static/media/MusicPlayer.scss": "/react-responsive-music-player/static/media/fontawesome-webfont.fee66e71.woff"
 }
